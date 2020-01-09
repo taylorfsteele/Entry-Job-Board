@@ -1,0 +1,23 @@
+const express = require('express')
+const app = express()
+const port = 3001
+require('dotenv').config();
+
+var redis = require("redis"),
+    client = redis.createClient({
+        port: 18680,
+        host: 'redis-18680.c11.us-east-1-3.ec2.cloud.redislabs.com',
+        password: process.env.REDIS_PASS
+    }
+
+    );
+const { promisify } = require('util');
+const getAsync = promisify(client.get).bind(client);
+
+app.get('/jobs', async (req, res) => {
+    const jobs = await getAsync('github');
+    res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+    return res.send(jobs)
+})
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))

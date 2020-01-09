@@ -1,0 +1,26 @@
+{
+  "name": "job-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorfsteele/Entry-Job-Board-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taylorfsteele/Entry-Job-Board-/issues"
+  },
+  "homepage": "https://github.com/taylorfsteele/Entry-Job-Board-#readme",
+  "dependencies": {
+    "cron": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "redis": "^2.8.0"
+  }
+}
