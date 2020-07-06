@@ -1,5 +1,13 @@
-# Entry-Job-Board
+#Automated Entry Level Job Board
 
-Learn by Project for React, NodeJS, Cron.
+Automatically fetches new entry-level jobs on a cron-job timer to display on site.
 
-MVP with CRUD API.
+##Usage
+
+1. Run:
+
+```
+cd api
+npm install
+npm start
+```
