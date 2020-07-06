@@ -1,6 +1,7 @@
 # Automated Entry Level Job Board
 
 Automatically fetches new entry-level jobs on a cron-job timer to display on site.
+![](JobsGif.gif)
 
 ## Usage
 
@@ -10,7 +11,6 @@ Automatically fetches new entry-level jobs on a cron-job timer to display on sit
 npm install
 cd api
 node index.js
-
 ```
 2. In main directory, run:
 ```
