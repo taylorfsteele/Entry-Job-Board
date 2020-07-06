@@ -1,6 +1,6 @@
 # Automated Entry Level Job Board
 
-Automatically fetches new entry-level jobs on a cron-job timer to display on site.
+Automatically fetches new entry-level jobs on a cron-job timer to display on site. API Calls to GitHub Jobs to retvieve jobs, Stores API Calls and serves to Front-End with Redis Cloud Database. React Front-End with Material UI Styled Component Library, NodeJS with Express Back-End.
 
 
 ![](JobsGif.gif)
